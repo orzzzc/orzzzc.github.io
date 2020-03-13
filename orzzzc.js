@@ -22,17 +22,20 @@ function orzorz() {
 ";
     document.title="膜拜zzc";
 }
-var orzCount=0,orzDelta=1,says2_restTime=0,dianji=5;
+var obj=new Date();
+var orzCount=0,orzDelta=1,dianji=0,changedianji=1,cjresttime=0,lastcj=0;
 var flag=new Array(1,1,1,1,1,1,1,1,1);
 var sayslist=new Array("我太强了","我txdy","你们怎么这么菜啊","这些黑题都是些sb题，我随便切","IOI太简单了，我都不屑于AK","我吊打你们","我是最强的","我无敌了","我rank1稳了");
-function ORZINF() {
-	var says2_restTime_Default=50;
+function ORZINF(){
+    obj=new Date();
     orzCount+=orzDelta;
     dianji+=1;
+    if(cjresttime==1)if(obj.getHours()*3600+obj.getMinutes()*60+obj.getSeconds()-lastcj>=5)cjresttime=0;
+    if(cjresttime==0)document.getElementById("zzcsays2").innerHTML="";
     if(orzCount<10000)document.getElementById("orzTimes").innerHTML='已膜拜zzc '+orzCount+' 次';
     else if(orzCount<10000000)document.getElementById("orzTimes").innerHTML='已膜拜zzc '+Math.floor(orzCount/1000)+'.'+Math.floor(orzCount/100)%10+'k 次';
     else document.getElementById("orzTimes").innerHTML='已膜拜zzc '+Math.floor(orzCount/1000000)+'.'+Math.floor(orzCount/100000)%10+Math.floor(orzCount/10000)%10+'m 次';
-    if(dianji>=5)document.getElementById("zzcsays").innerHTML='zzc：'+sayslist[Math.floor(Math.random()*sayslist.length)],dianji-=5;
+    if(dianji%5==changedianji)document.getElementById("zzcsays").innerHTML='zzc：'+sayslist[Math.floor(Math.random()*sayslist.length)],changedianji=0;
     if(orzCount>=50)if(flag[1]==1)flag[1]=0,orzDelta*=5,document.getElementById("orzbutton").innerHTML="膜拜zzc "+orzDelta+" 次";
     if(orzCount>=1000)if(flag[2]==1)flag[2]=0,orzDelta*=4,document.getElementById("orzbutton").innerHTML="膜拜zzc "+orzDelta+" 次";
     if(orzCount>=10000)if(flag[3]==1)flag[3]=0,orzDelta*=2.5,document.getElementById("orzbutton").innerHTML="膜拜zzc "+orzDelta+" 次";
@@ -44,6 +47,7 @@ function ORZINF() {
     if(orzCount>=100000000000000000000) {
         document.getElementById("mainarea").innerHTML="<h1 style=\"color:red\" align=\"center\">zzc:你这个菜鸡别膜我了，反正也不可能变得像我这么强<br>我还要去THU吊打集训队，还要去MIT秒题<br>（zzc说着走起了路准备离开）</h1><br><br><div id=\"walkzzc\" align=\"center\"></div><br><button style=\"font-size: 24px\" onclick=\"last_orz()\" id=\"lastorz\">继续膜拜...</button>";
     }
+    if(dianji==1000)document.getElementById("zzcsays2").innerHTML='获得成就 狂热：点击膜拜按钮1000次<br>单次点击膜拜数翻倍',orzDelta*=2,document.getElementById("orzbutton").innerHTML="膜拜zzc "+orzDelta+" 次",cjresttime=1,lastcj=obj.getHours()*3600+obj.getMinutes()*60+obj.getSeconds();
 }
 
 function last_orz() {
