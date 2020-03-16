@@ -36,7 +36,10 @@ function ORZINF(){
     if(orzCount<10000)document.getElementById("orzTimes").innerHTML='已膜拜zzc '+orzCount+' 次';
     else if(orzCount<10000000)document.getElementById("orzTimes").innerHTML='已膜拜zzc '+Math.floor(orzCount/1000)+'.'+Math.floor(orzCount/100)%10+'k 次';
     else if(orzCount<10000000000)document.getElementById("orzTimes").innerHTML='已膜拜zzc '+Math.floor(orzCount/1000000)+'.'+Math.floor(orzCount/100000)%10+Math.floor(orzCount/10000)%10+'m 次';
-    else document.getElementById("orzTimes").innerHTML='已膜拜zzc '+Math.floor(orzCount/1000000000)+'.'+Math.floor(orzCount/100000000)%10+Math.floor(orzCount/10000000)%10+'b 次';
+    else if(orzCount<10000000000000)document.getElementById("orzTimes").innerHTML='已膜拜zzc '+Math.floor(orzCount/1000000000)+'.'+Math.floor(orzCount/100000000)%10+'b 次';
+    else if(orzCount<10000000000000000)document.getElementById("orzTimes").innerHTML='已膜拜zzc '+Math.floor(orzCount/1000000000000)+'.'+Math.floor(orzCount/100000000000)%10+'t 次';
+    else if(orzCount<10000000000000000000)document.getElementById("orzTimes").innerHTML='已膜拜zzc '+Math.floor(orzCount/1000000000000000)+'.'+Math.floor(orzCount/100000000000000)%10+'q 次';
+    else document.getElementById("orzbutton").innerHTML='已膜拜zzc '+Math.floor(orzCount/1000000000000000000)+'.'+Math.floor(orzCount/100000000000000000)%10+'Q 次';
     if(dianji%5==changedianji)document.getElementById("zzcsays").innerHTML='zzc：'+sayslist[Math.floor(Math.random()*sayslist.length)],changedianji=0;
     if(orzCount>=50)if(flag[1]==1)flag[1]=0,orzDelta*=5,flag[0]=0;
     if(orzCount>=1000)if(flag[2]==1)flag[2]=0,orzDelta*=4,flag[0]=0;
@@ -58,12 +61,24 @@ function ORZINF(){
     if(orzCount>=20000000000)if(flag[23]==1)flag[23]=0,orzDelta*=1.2,flag[0]=0;
     if(orzCount>=50000000000)if(flag[24]==1)flag[24]=0,orzDelta/=3,orzDelta*=5,flag[0]=0;
     if(orzCount>=120000000000)if(flag[25]==1)flag[25]=0,orzDelta*=1.2,flag[0]=0;
-    //if(orzCount>=100000000000000000000) {
+    if(orzCount>=300000000000)if(flag[26]==1)flag[26]=0,orzDelta*=1.5,flag[0]=0;
+    if(orzCount>=800000000000)if(flag[27]==1)flag[27]=0,orzDelta*=2,flag[0]=0;
+    if(orzCount>=2500000000000)if(flag[28]==1)flag[28]=0,orzDelta/=3,orzDelta*=5,flag[0]=0;
+    if(orzCount>=9000000000000)if(flag[29]==1)flag[29]=0,orzDelta/=3,orzDelta*=5,flag[0]=0;
+    if(orzCount>=30000000000000)if(flag[30]==1)flag[30]=0,orzDelta*=1.5,flag[0]=0;
+    if(orzCount>=100000000000000)if(flag[31]==1)flag[31]=0,orzDelta*=2,flag[0]=0;
+    if(orzCount>=280000000000000)if(flag[32]==1)flag[32]=0,orzDelta*=1.8,flag[0]=0;
+    if(orzCount>=700000000000000)if(flag[33]==1)flag[33]=0,orzDelta/=3,orzDelta*=4,flag[0]=0;
+    if(orzCount>=1800000000000000)if(flag[34]==1)flag[34]=0,orzDelta*=2.5,flag[0]=0;
+    if(orzCount>=5500000000000000)if(flag[35]==1)flag[35]=0,orzDelta*=3,flag[0]=0;
+    if(orzCount>=25000000000000000)if(flag[36]==1)flag[36]=0,orzDelta*=1.5,flag[0]=0;
+    //if(orzCount>=1000000000000000000000000000000000000) {
     //    document.getElementById("mainarea").innerHTML="<h1 style=\"color:red\" align=\"center\">zzc:你这个菜鸡别膜我了，反正也不可能变得像我这么强<br>我还要去THU吊打集训队，还要去MIT秒题<br>（zzc说着走起了路准备离开）</h1><br><br><div id=\"walkzzc\" align=\"center\"></div><br><button style=\"font-size: 24px\" onclick=\"last_orz()\" id=\"lastorz\">继续膜拜...</button>";
     //}
     if(dianji>=500)if(flag[9]==1)flag[9]=0,document.getElementById("zzcsays2").innerHTML='获得成就 狂热LV.1：点击膜拜按钮500次<br>单次点击膜拜数翻倍',orzDelta*=2,flag[0]=0,cjresttime=1,lastcj=obj.getHours()*3600+obj.getMinutes()*60+obj.getSeconds();
     if(dianji>=2000)if(flag[10]==1)flag[10]=0,document.getElementById("zzcsays2").innerHTML='获得成就 狂热LV.2：点击膜拜按钮2000次<br>单次点击膜拜数翻倍',orzDelta*=2,flag[0]=0,cjresttime=1,lastcj=obj.getHours()*3600+obj.getMinutes()*60+obj.getSeconds();
     if(dianji>=5000)if(flag[11]==1)flag[11]=0,document.getElementById("zzcsays2").innerHTML='获得成就 狂热LV.3：点击膜拜按钮5000次<br>单次点击膜拜数翻倍',orzDelta*=2,flag[0]=0,cjresttime=1,lastcj=obj.getHours()*3600+obj.getMinutes()*60+obj.getSeconds();
+    if(dianji>=15000)if(flag[37]==1)flag[37]=0,document.getElementById("zzcsays2").innerHTML='获得成就 狂热LV.4：点击膜拜按钮15000次<br>单次点击膜拜数翻倍',orzDelta*=2,flag[0]=0,cjresttime=1,lastcj=obj.getHours()*3600+obj.getMinutes()*60+obj.getSeconds();
     tttt=obj.getHours()*3600+obj.getMinutes()*60+obj.getSeconds()-lastmb;
     if(tttt>=5)if(tttt<6)if(flag[12]==1)flag[12]=0,document.getElementById("zzcsays2").innerHTML='获得成就 虔诚LV.1<br>单次点击膜拜数变为原来的3倍',orzDelta*=3,flag[0]=0,cjresttime=1,lastcj=obj.getHours()*3600+obj.getMinutes()*60+obj.getSeconds();
     if(tttt>=12)if(tttt<13)if(flag[12]==0)if(flag[13]==1)flag[13]=0,document.getElementById("zzcsays2").innerHTML='获得成就 虔诚LV.2<br>单次点击膜拜数变为原来的4倍',orzDelta*=4,flag[0]=0,cjresttime=1,lastcj=obj.getHours()*3600+obj.getMinutes()*60+obj.getSeconds();    
@@ -71,8 +86,11 @@ function ORZINF(){
     if(flag[0]==0){
         if(orzDelta<10000)document.getElementById("orzbutton").innerHTML='膜拜zzc '+orzDelta+' 次';
         else if(orzDelta<10000000)document.getElementById("orzbutton").innerHTML='膜拜zzc '+Math.floor(orzDelta/1000)+'.'+Math.floor(orzDelta/100)%10+'k 次';
-        else if(orzDelta<10000000000)document.getElementById("orzbutton").innerHTML='膜拜zzc '+Math.floor(orzDelta/1000000)+'.'+Math.floor(orzDelta/100000)%10+Math.floor(orzCount/10000)%10+'m 次';
-        else document.getElementById("orzbutton").innerHTML='膜拜zzc '+Math.floor(orzCount/1000000000)+'.'+Math.floor(orzCount/100000000)%10+Math.floor(orzCount/10000000)%10+'b 次';
+        else if(orzDelta<10000000000)document.getElementById("orzbutton").innerHTML='膜拜zzc '+Math.floor(orzDelta/1000000)+'.'+Math.floor(orzDelta/100000)%10+'m 次';
+        else if(orzDelta<10000000000000)document.getElementById("orzbutton").innerHTML='膜拜zzc '+Math.floor(orzDelta/1000000000)+'.'+Math.floor(orzDelta/100000000)%10+'b 次';
+        else if(orzDelta<10000000000000000)document.getElementById("orzbutton").innerHTML='膜拜zzc '+Math.floor(orzDelta/1000000000000)+'.'+Math.floor(orzDelta/100000000000)%10+'t 次';
+        else if(orzDelta<10000000000000000000)document.getElementById("orzbutton").innerHTML='膜拜zzc '+Math.floor(orzDelta/1000000000000000)+'.'+Math.floor(orzDelta/100000000000000)%10+'q 次';
+        else document.getElementById("orzbutton").innerHTML='膜拜zzc '+Math.floor(orzDelta/1000000000000000000)+'.'+Math.floor(orzDelta/100000000000000000)%10+'Q 次';
     }
 }
 
