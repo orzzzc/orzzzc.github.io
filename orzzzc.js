@@ -36,10 +36,10 @@ function ORZINF(){
     if(orzCount<10000)document.getElementById("orzTimes").innerHTML='已膜拜zzc '+orzCount+' 次';
     else if(orzCount<10000000)document.getElementById("orzTimes").innerHTML='已膜拜zzc '+Math.floor(orzCount/1000)+'.'+Math.floor(orzCount/100)%10+'k 次';
     else if(orzCount<10000000000)document.getElementById("orzTimes").innerHTML='已膜拜zzc '+Math.floor(orzCount/1000000)+'.'+Math.floor(orzCount/100000)%10+Math.floor(orzCount/10000)%10+'m 次';
-    else if(orzCount<10000000000000)document.getElementById("orzTimes").innerHTML='已膜拜zzc '+Math.floor(orzCount/1000000000)+'.'+Math.floor(orzCount/100000000)%10+'b 次';
-    else if(orzCount<10000000000000000)document.getElementById("orzTimes").innerHTML='已膜拜zzc '+Math.floor(orzCount/1000000000000)+'.'+Math.floor(orzCount/100000000000)%10+'t 次';
-    else if(orzCount<10000000000000000000)document.getElementById("orzTimes").innerHTML='已膜拜zzc '+Math.floor(orzCount/1000000000000000)+'.'+Math.floor(orzCount/100000000000000)%10+'q 次';
-    else document.getElementById("orzbutton").innerHTML='已膜拜zzc '+Math.floor(orzCount/1000000000000000000)+'.'+Math.floor(orzCount/100000000000000000)%10+'Q 次';
+    else if(orzCount<10000000000000)document.getElementById("orzTimes").innerHTML='已膜拜zzc '+Math.floor(orzCount/1000000000)+'.'+Math.floor(orzCount/100000000)%10+Math.floor(orzCount/10000000)%10+'b 次';
+    else if(orzCount<10000000000000000)document.getElementById("orzTimes").innerHTML='已膜拜zzc '+Math.floor(orzCount/1000000000000)+'.'+Math.floor(orzCount/100000000000)%10+Math.floor(orzCount/10000000000)%10+'t 次';
+    else if(orzCount<10000000000000000000)document.getElementById("orzTimes").innerHTML='已膜拜zzc '+Math.floor(orzCount/1000000000000000)+'.'+Math.floor(orzCount/100000000000000)%10+Math.floor(orzCount/10000000000000)%10+'q 次';
+    else document.getElementById("orzbutton").innerHTML='已膜拜zzc '+Math.floor(orzCount/1000000000000000000)+'.'+Math.floor(orzCount/100000000000000000)%10+Math.floor(orzCount/10000000000000000)%10+'Q 次';
     if(dianji%5==changedianji)document.getElementById("zzcsays").innerHTML='zzc：'+sayslist[Math.floor(Math.random()*sayslist.length)],changedianji=0;
     if(orzCount>=50)if(flag[1]==1)flag[1]=0,orzDelta*=5,flag[0]=0;
     if(orzCount>=1000)if(flag[2]==1)flag[2]=0,orzDelta*=4,flag[0]=0;
