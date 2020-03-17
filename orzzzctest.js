@@ -104,7 +104,7 @@ function ORZINF(){
         else if(orzDelta<10000000000000000000)document.getElementById("orzbutton").innerHTML='膜拜zzc '+Math.floor(orzDelta/1000000000000000)+'.'+Math.floor(orzDelta/100000000000000)%10+'q 次';
         else document.getElementById("orzbutton").innerHTML='膜拜zzc '+Math.floor(orzDelta/1000000000000000000)+'.'+Math.floor(orzDelta/100000000000000000)%10+'Q 次';
     }
-    setCookie('mobaishuliang',orzDelta);
+    setCookie('mobaishuliang',orzCount);
 }
 function XINTUADD(){if(xinyang>=xintucost){
     xinyang-=xintucost;
