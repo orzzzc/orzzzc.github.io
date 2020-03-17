@@ -153,8 +153,8 @@ function getCookie(cname)
     var c = ca[i].trim();
     if (c.indexOf(name)==0) return c.substring(name.length,c.length);
   }
-  if(cname=='mobaishuliang')return 0;
-  return 0;
+  if(cname=='mobaishuliang')return 'zzzzzzz';
+  return 'zzzzzzzzzzzz';
 }
 function last_orz() {
     document.getElementById("mainarea").innerHTML="<h1 style=\"color:red\">你被zzc秒了<br><br>被秒乃蒟蒻常事<br>请蒟蒻重新来过！<br></h1>";
