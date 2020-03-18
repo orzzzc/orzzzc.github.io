@@ -15,7 +15,7 @@ document.getElementById("orz").innerHTML="\
 <span style=\"font-size: 40px; color: #FF0000\">\
 </span>\
 </p>\
-<button style=\"font-size: 24px\" onclick=\"ORZINF()\" id=\"orzbutton\">膜拜zzc 1 次</button>\
+<button style=\"font-size: 24px\" onclick=\"ORZINF()\" id=\"orzbutton\">膜拜zzc</button>\
 <div style=\"font-size: 50px;background:rgba(255,255,255,0.7);width:auto\" id=\"orzTimes\"></div>\
 <div style=\"font-size: 24px;\" id=\"zzcsays\"></div>\
 <div style=\"font-size: 24px;\" id=\"zzcsays2\"></div>\
