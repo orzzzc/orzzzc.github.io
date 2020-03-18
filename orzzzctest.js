@@ -80,13 +80,15 @@ function ORZINF(){
     if(orzCount>=1800000000000000)if(flag[34]==1)flag[34]=0,orzDelta*=2.5,flag[0]=0,xinyang+=1;
     if(orzCount>=5500000000000000)if(flag[35]==1)flag[35]=0,orzDelta*=3,flag[0]=0,xinyang+=1;
     if(orzCount>=25000000000000000)if(flag[36]==1)flag[36]=0,orzDelta*=1.5,flag[0]=0,xinyang+=1;
-    if(dianji>=500)if(flag[9]==1)flag[9]=0,document.getElementById("zzcsays2").innerHTML='获得成就 狂热LV.1：点击膜拜按钮500次<br>单次点击膜拜数翻倍',orzDelta*=2,flag[0]=0,cjresttime=1,lastcj=obj.getHours()*3600+obj.getMinutes()*60+obj.getSeconds();
-    if(dianji>=2000)if(flag[10]==1)flag[10]=0,document.getElementById("zzcsays2").innerHTML='获得成就 狂热LV.2：点击膜拜按钮2000次<br>单次点击膜拜数翻倍',orzDelta*=2,flag[0]=0,cjresttime=1,lastcj=obj.getHours()*3600+obj.getMinutes()*60+obj.getSeconds();
-    if(dianji>=5000)if(flag[11]==1)flag[11]=0,document.getElementById("zzcsays2").innerHTML='获得成就 狂热LV.3：点击膜拜按钮5000次<br>单次点击膜拜数翻倍',orzDelta*=2,flag[0]=0,cjresttime=1,lastcj=obj.getHours()*3600+obj.getMinutes()*60+obj.getSeconds();
-    if(dianji>=15000)if(flag[37]==1)flag[37]=0,document.getElementById("zzcsays2").innerHTML='获得成就 狂热LV.4：点击膜拜按钮15000次<br>单次点击膜拜数翻倍',orzDelta*=2,flag[0]=0,cjresttime=1,lastcj=obj.getHours()*3600+obj.getMinutes()*60+obj.getSeconds();
+    if(dianji>=500)if(flag[9]==1)flag[9]=0,document.getElementById("zzcsays2").innerHTML='获得成就 狂热LV.1：点击膜拜按钮500次<br>单次点击膜拜数翻倍',orzDelta*=2,flag[0]=0,cjresttime=1,lastcj=obj.getHours()*3600+obj.getMinutes()*60+obj.getSeconds(),setCookie('krcookie',1);
+    if(dianji>=2000)if(flag[10]==1)flag[10]=0,document.getElementById("zzcsays2").innerHTML='获得成就 狂热LV.2：点击膜拜按钮2000次<br>单次点击膜拜数翻倍',orzDelta*=2,flag[0]=0,cjresttime=1,lastcj=obj.getHours()*3600+obj.getMinutes()*60+obj.getSeconds(),setCookie('krcookie',2);
+    if(dianji>=5000)if(flag[11]==1)flag[11]=0,document.getElementById("zzcsays2").innerHTML='获得成就 狂热LV.3：点击膜拜按钮5000次<br>单次点击膜拜数翻倍',orzDelta*=2,flag[0]=0,cjresttime=1,lastcj=obj.getHours()*3600+obj.getMinutes()*60+obj.getSeconds(),setCookie('krcookie',3);
+    if(dianji>=15000)if(flag[37]==1)flag[37]=0,document.getElementById("zzcsays2").innerHTML='获得成就 狂热LV.4：点击膜拜按钮15000次<br>单次点击膜拜数翻倍',orzDelta*=2,flag[0]=0,cjresttime=1,lastcj=obj.getHours()*3600+obj.getMinutes()*60+obj.getSeconds(),setCookie('krcookie',4);
+    if(dianji>=40000)if(flag[38]==1)flag[38]=0,document.getElementById("zzcsays2").innerHTML='获得成就 狂热LV.5：点击膜拜按钮40000次<br>单次点击膜拜数翻倍',orzDelta*=2,flag[0]=0,cjresttime=1,lastcj=obj.getHours()*3600+obj.getMinutes()*60+obj.getSeconds(),setCookie('krcookie',5);
+    if(dianji>=100000)if(flag[39]==1)flag[39]=0,document.getElementById("zzcsays2").innerHTML='获得成就 狂热LV.6：点击膜拜按钮100000次<br>单次点击膜拜数翻倍',orzDelta*=2,flag[0]=0,cjresttime=1,lastcj=obj.getHours()*3600+obj.getMinutes()*60+obj.getSeconds(),setCookie('krcookie',6);
     tttt=obj.getHours()*3600+obj.getMinutes()*60+obj.getSeconds()-lastmb;
-    if(tttt>=5)if(tttt<6)if(flag[12]==1)flag[12]=0,document.getElementById("zzcsays2").innerHTML='获得成就 虔诚LV.1<br>单次点击膜拜数变为原来的3倍',orzDelta*=3,flag[0]=0,cjresttime=1,lastcj=obj.getHours()*3600+obj.getMinutes()*60+obj.getSeconds();
-    if(tttt>=12)if(tttt<13)if(flag[12]==0)if(flag[13]==1)flag[13]=0,document.getElementById("zzcsays2").innerHTML='获得成就 虔诚LV.2<br>单次点击膜拜数变为原来的4倍',orzDelta*=4,flag[0]=0,cjresttime=1,lastcj=obj.getHours()*3600+obj.getMinutes()*60+obj.getSeconds();    
+    if(tttt>=5)if(tttt<6)if(flag[12]==1)flag[12]=0,document.getElementById("zzcsays2").innerHTML='获得成就 虔诚LV.1<br>单次点击膜拜数变为原来的3倍',orzDelta*=3,flag[0]=0,cjresttime=1,lastcj=obj.getHours()*3600+obj.getMinutes()*60+obj.getSeconds(),setCookie('qccookie',1);
+    if(tttt>=12)if(tttt<13)if(flag[12]==0)if(flag[13]==1)flag[13]=0,document.getElementById("zzcsays2").innerHTML='获得成就 虔诚LV.2<br>单次点击膜拜数变为原来的4倍',orzDelta*=4,flag[0]=0,cjresttime=1,lastcj=obj.getHours()*3600+obj.getMinutes()*60+obj.getSeconds(),setCookie('qccookie',2);    
     lastmb=obj.getHours()*3600+obj.getMinutes()*60+obj.getSeconds();
     if(flag[0]==0){
         setCookie('xinyangcookie',xinyang);
@@ -108,10 +110,19 @@ function allcookie(){
         xinyang=getCookie('xinyangcookie');
         xintu=getCookie('xintucookie');
         jiaotang=getCookie('jiaotangcookie');
+  var krlv=getCookie('krcookie'),qclv=getCookie('qccookie');
         for(var i=0; i<jiaotang; i++) {
             jiaotangcost*=1.5;
             jiaotangcost=Math.floor(jiaotangcost);
         }
+    if(krlv>=1)orzDelta*=2,flag[9]=0;
+    if(krlv>=2)orzDelta*=2,flag[10]=0;
+    if(krlv>=3)orzDelta*=2,flag[11]=0;
+    if(krlv>=4)orzDelta*=2,flag[37]=0;
+    if(krlv>=5)orzDelta*=2,flag[38]=0;
+    if(krlv>=6)orzDelta*=2,flag[39]=0;
+    if(qclv>=1)orzDelta*=3,flag[12]=0;
+    if(qclv>=2)orzDelta*=4,flag[13]=0;
     document.getElementById("zzcsays").innerHTML='zzc：'+sayslist[Math.floor(Math.random()*sayslist.length)];
     if(orzCount>=50)if(flag[1]==1)flag[1]=0,orzDelta*=5;
     if(orzCount>=1000)if(flag[2]==1)flag[2]=0,orzDelta*=4;
@@ -144,6 +155,13 @@ function allcookie(){
     if(orzCount>=1800000000000000)if(flag[34]==1)flag[34]=0,orzDelta*=2.5;
     if(orzCount>=5500000000000000)if(flag[35]==1)flag[35]=0,orzDelta*=3;
     if(orzCount>=25000000000000000)if(flag[36]==1)flag[36]=0,orzDelta*=1.5;
+    if(orzCount<10000)document.getElementById("orzTimes").innerHTML='已膜拜zzc '+orzCount+' 次';
+    else if(orzCount<10000000)document.getElementById("orzTimes").innerHTML='已膜拜zzc '+Math.floor(orzCount/1000)+'.'+Math.floor(orzCount/100)%10+'k 次';
+    else if(orzCount<10000000000)document.getElementById("orzTimes").innerHTML='已膜拜zzc '+Math.floor(orzCount/1000000)+'.'+Math.floor(orzCount/100000)%10+Math.floor(orzCount/10000)%10+'m 次';
+    else if(orzCount<10000000000000)document.getElementById("orzTimes").innerHTML='已膜拜zzc '+Math.floor(orzCount/1000000000)+'.'+Math.floor(orzCount/100000000)%10+Math.floor(orzCount/10000000)%10+'b 次';
+    else if(orzCount<10000000000000000)document.getElementById("orzTimes").innerHTML='已膜拜zzc '+Math.floor(orzCount/1000000000000)+'.'+Math.floor(orzCount/100000000000)%10+Math.floor(orzCount/10000000000)%10+'t 次';
+    else if(orzCount<10000000000000000000)document.getElementById("orzTimes").innerHTML='已膜拜zzc '+Math.floor(orzCount/1000000000000000)+'.'+Math.floor(orzCount/100000000000000)%10+Math.floor(orzCount/10000000000000)%10+'q 次';
+    else document.getElementById("orzTimes").innerHTML='已膜拜zzc '+Math.floor(orzCount/1000000000000000000)+'.'+Math.floor(orzCount/100000000000000000)%10+Math.floor(orzCount/10000000000000000)%10+'Q 次';
         document.getElementById("information1").innerHTML='信仰 '+xinyang;
         if(orzDelta<10000)document.getElementById("orzbutton").innerHTML='膜拜zzc '+orzDelta+' 次';
         else if(orzDelta<10000000)document.getElementById("orzbutton").innerHTML='膜拜zzc '+Math.floor(orzDelta/1000)+'.'+Math.floor(orzDelta/100)%10+'k 次';
