@@ -21,7 +21,7 @@ document.getElementById("orz").innerHTML="\
 <div style=\"font-size: 24px;\" id=\"zzcsays2\"></div>\
 <br>\
 <button style=\"font-size: 24px\" onclick=\"XINTUADD()\" id=\"xintubutton\">信徒 0 名[1 信仰]</button>\
-allcookie();
+allcookie()\
   \
 <button style=\"font-size: 24px\" onclick=\"JIAOTANGADD()\" id=\"jiaotangbutton\">教堂 0 座[2 信仰]</button>\
 <div style=\"font-size: 24px;\" id=\"information1\">信仰 0</div>\
